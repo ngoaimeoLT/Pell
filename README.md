@@ -254,3 +254,4 @@ sed -i "/PELL_/d" $HOME/.bash_profile
 Add project introduction
 Add feature overview
 Add system requirements
+Add installation instructions
