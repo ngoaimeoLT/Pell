@@ -257,3 +257,4 @@ Add system requirements
 Add installation instructions
 Add quick start guide
 Document log parsing process
+Add filtering examples
