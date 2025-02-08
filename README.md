@@ -259,3 +259,4 @@ Add quick start guide
 Document log parsing process
 Add filtering examples
 Add visualization options
+Add export functionality guide
