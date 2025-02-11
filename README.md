@@ -260,3 +260,4 @@ Document log parsing process
 Add filtering examples
 Add visualization options
 Add export functionality guide
+Add performance optimization tips
