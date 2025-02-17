@@ -262,3 +262,4 @@ Add visualization options
 Add export functionality guide
 Add performance optimization tips
 Add contributing guidelines
+Add code of conduct
