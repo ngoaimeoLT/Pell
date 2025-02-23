@@ -264,3 +264,4 @@ Add performance optimization tips
 Add contributing guidelines
 Add code of conduct
 Add FAQ for users
+Add troubleshooting guide
