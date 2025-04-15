@@ -40,7 +40,8 @@ echo "export PELL_PORT="58"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 
-# download binary
+**download binary**
+```
 cd $HOME
 wget -O pellcored https://github.com/0xPellNetwork/network-config/releases/download/v1.2.1/pellcored-v1.2.1-linux-amd64
 chmod +x pellcored
@@ -51,6 +52,7 @@ mkdir -p $LD_LIBRARY_PATH
 wget "https://github.com/CosmWasm/wasmvm/releases/download/$WASMVM_VERSION/libwasmvm.$(uname -m).so" -O "$LD_LIBRARY_PATH/libwasmvm.$(uname -m).so"
 echo "export LD_LIBRARY_PATH=$HOME/.pellcored/lib:$LD_LIBRARY_PATH" >> $HOME/.bash_profile
 source ~/.bash_profile
+```
 
 # config and init app
 pellcored config node tcp://localhost:${PELL_PORT}657
