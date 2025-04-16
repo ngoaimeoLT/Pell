@@ -54,11 +54,13 @@ echo "export LD_LIBRARY_PATH=$HOME/.pellcored/lib:$LD_LIBRARY_PATH" >> $HOME/.ba
 source ~/.bash_profile
 ```
 
-# config and init app
+**config and init app**
+```
 pellcored config node tcp://localhost:${PELL_PORT}657
 pellcored config keyring-backend os
 pellcored config chain-id ignite_186-1
 pellcored init "test" --chain-id ignite_186-1
+```
 
 # download genesis and addrbook
 wget -O $HOME/.pellcored/config/genesis.json https://server-5.itrocket.net/testnet/pell/genesis.json
