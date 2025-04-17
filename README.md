@@ -62,10 +62,11 @@ pellcored config chain-id ignite_186-1
 pellcored init "test" --chain-id ignite_186-1
 ```
 
-# download genesis and addrbook
+**download genesis and addrbook**
+```
 wget -O $HOME/.pellcored/config/genesis.json https://server-5.itrocket.net/testnet/pell/genesis.json
 wget -O $HOME/.pellcored/config/addrbook.json  https://server-5.itrocket.net/testnet/pell/addrbook.json
-
+```
 # set seeds and peers
 SEEDS="5f10959cc96b5b7f9e08b9720d9a8530c3d08d19@pell-testnet-seed.itrocket.net:58656"
 PEERS="d003cb808ae91bad032bb94d19c922fe094d8556@pell-testnet-peer.itrocket.net:58656,85ae72fe4ab8b669299f6da1baaaba8a6c664ec3@185.232.70.33:17656,2b2932bd000204b75d2675d84e0e6e690fcc9b41@31.165.179.107:26656,7fd83fe2a75067fd04aa8471a4ad2396134ee234@65.21.45.194:36656,e96ce110267ffffbbc9d8711cab37f2e34861f21@135.181.46.158:57656,73270186a4ed6a4136a2c02274867c0c41c304dd@46.4.91.76:30356,58c2ffb3e16f61462ebf26730cbc27b458ea82c0@34.44.209.45:26656,f487313950783ed57c5fcb9be1998b50a41bd931@37.27.127.220:57656,48c48532950e51fba80a1031d5a58c627737ed84@65.109.82.111:25656,4cad46992872f86da794f47ab662592bf9ca500a@135.181.79.242:57656,cc9acce34ac781b76be5c9f7d9f1ed307331de06@94.72.118.149:57656"
