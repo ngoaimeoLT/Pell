@@ -96,10 +96,12 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.pe
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"19\"/" $HOME/.pellcored/config/app.toml
 ```
 
-# set minimum gas price, enable prometheus and disable indexing
+**set minimum gas price, enable prometheus and disable indexing**
+```
 sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "0apell"|g' $HOME/.pellcored/config/app.toml
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.pellcored/config/config.toml
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.pellcored/config/config.toml
+```
 
 # create service file
 sudo tee /etc/systemd/system/pellcored.service > /dev/null <<EOF
