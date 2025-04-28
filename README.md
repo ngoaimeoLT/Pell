@@ -103,7 +103,8 @@ sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.pellcored/config/conf
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.pellcored/config/config.toml
 ```
 
-# create service file
+**create service file**
+```
 sudo tee /etc/systemd/system/pellcored.service > /dev/null <<EOF
 [Unit]
 Description=Pell node
@@ -119,6 +120,7 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
+```
 
 # reset and download snapshot
 pellcored tendermint unsafe-reset-all --home $HOME/.pellcored
