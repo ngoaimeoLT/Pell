@@ -122,13 +122,15 @@ WantedBy=multi-user.target
 EOF
 ```
 
-# reset and download snapshot
+**reset and download snapshot**
+```
 pellcored tendermint unsafe-reset-all --home $HOME/.pellcored
 if curl -s --head curl https://server-5.itrocket.net/testnet/pell/pell_2025-04-09_1843275_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
   curl https://server-5.itrocket.net/testnet/pell/pell_2025-04-09_1843275_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.pellcored
     else
   echo "no snapshot found"
 fi
+```
 
 # enable and start service
 sudo systemctl daemon-reload
