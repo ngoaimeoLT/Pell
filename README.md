@@ -132,7 +132,8 @@ if curl -s --head curl https://server-5.itrocket.net/testnet/pell/pell_2025-04-0
 fi
 ```
 
-# enable and start service
+**enable and start service**
+```
 sudo systemctl daemon-reload
 sudo systemctl enable pellcored
 sudo systemctl restart pellcored && sudo journalctl -u pellcored -fo cat
@@ -140,6 +141,8 @@ Automatic Installation
 pruning: custom: 100/0/19 | indexer: null
 
 source <(curl -s https://itrocket.net/api/testnet/pell/autoinstall/)
+```
+
 Create wallet
 # to create a new wallet, use the following command. don’t forget to save the mnemonic
 pellcored keys add $WALLET
