@@ -208,12 +208,14 @@ echo "{\"pubkey\":{\"@type\":\"/cosmos.crypto.ed25519.PubKey\",\"key\":\"$(pellc
 }" > validator.json
 ```
 
-# Create a validator using the JSON configuration
+**Create a validator using the JSON configuration**
+```
 pellcored tx staking create-validator validator.json \
     --from $WALLET \
     --chain-id ignite_186-1 \
 	--fees 30apell --gas 300000
-	
+```
+
 Monitoring
 If you want to have set up a monitoring and alert system use our cosmos nodes monitoring guide with tenderduty
 
