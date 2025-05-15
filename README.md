@@ -240,10 +240,14 @@ sudo ufw allow ssh/tcp
 sudo ufw allow ${PELL_PORT}656/tcp
 sudo ufw enable
 ```
-Delete node
+
+**Delete node**
+```
 sudo systemctl stop pellcored
 sudo systemctl disable pellcored
 sudo rm -rf /etc/systemd/system/pellcored.service
 sudo rm $(which pellcored)
 sudo rm -rf $HOME/.pellcored
 sed -i "/PELL_/d" $HOME/.bash_profile
+```
+
